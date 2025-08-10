@@ -1,53 +1,27 @@
 # skillbrain-galaxy
 
-Comenzi de Linux utile (care merg in gitbash):
+## Comenzi utile de Linux (care merg in gitbash):
 
-- "cd git" - schimbam folderul in folderul "git"
+- "cd giskillbrain-galaxy" - schimbam folderul in folderul "git"
 - "cd .." - schimbam folderul parinte
-- "ls" - vedem ce se afla in interior
-- "pwd" - vezi directoriul curent (path)
-- "CTRL + C" - abandonezi comanda
+- "ls" - vedem ce se afla in interiorul dosarului curent
+- "pwd" - vedem path (locatia) directorului curent
+- "CTRL + C" - abandonam comanda
 
-## Comenzi utile de git
+## GIT: cum incepem o tema noua?
 
-Conexiunea cu github:
+- opt 'git status' - o comanda importanta, inofensiva (optionala), care ne arata statutul git-ului
+- 'git checkout main' - ne mutam in branch-ul de baza cu numele "main"
+- opt 'git fetch' - sincronizeaza codul de pe git hub cu dosarul local. Nu modifica nimic local, doar e sincronizat
+- opt 'git pull origin main' - actualizam branch-ul "main" din git hub in local
+- 'git checkout -b sprint2' - se creeaza un branch nou cu numele sprint2
+- incepem lucru: creem un dosar nou "sprint2" si punem acolo toate fisierele necesare
 
-(prima data, cand cream un nou repo)
-
-"git clone git@github....-skillbrain-momo.git" (linkul se ia din rubrica SSH)
-
-(optional) "git remote -v" - vedem linkul de conectare la github
-
-(optional) "git status" - sa vedem care e statusul nostru
-
-PUSH (impingem codul local catre github. Ne straduim sa nu facem push niciodata pe branch-ul main)
-
-1.(optional) git status
-
-[aici trebuie sa fie curat, fara modificari active, daca sunt modificari active trebuie fie de renuntat la ele sau sa le adaugam. Intr-un final trebuie sa fie afisat asta: Nothing to commit, working tree clean"]
-
-Pentru a renunta la modificari active, se poate scrie comanda: "git stash"
-
-(important) Sa ne asiguram ca suntem in dosarul parinte (unde s-a copiat repository-ul) si nu in subdosare.
-
-git checkout main
-git fetch
-git pull origin main (actualizam branchul main din github in local) (se mai poate folosi comanda de git rebase)
-5.git checkout -b sprint7
-
-// Incepem lucru: cream un dosar nou "sprint7" si punem acolo toate fisierele necesare
-
-// Cand terminal lucru:
-
-git add .
-7.git commit -m "Add readme.md"
-
-8.git push origin sprint7
-
-9.[se creeaza un PR - Pull Request]
-
-10.[se creeaza un ticket pe notion cu linkul la PR]
-
-[se asteapta confirmarea]
-
-[doar dupa ce exista confirmarea se apasa Merge la Pull Request]
+- Cand terminam lucrul:
+- 'git add .'
+- 'git commit -m "Am adaugat dosarul tema2 cu tema facuta"
+- 'git push origin sprint2'
+- creem un nou Pull Request (PR)
+- creem un ticket pe notion cu link-ul la PR
+- asteptam PR sa fie confirmat
+- apasam pe Merge la PR
