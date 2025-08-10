@@ -2,11 +2,11 @@
 
 Comenzi de Linux utile (care merg in gitbash):
 
--"cd git" - schimbam folderul in folderul "git"
--"cd .." - schimbam folderul parinte
--"ls" - vedem ce se afla in interior
--"pwd" - vezi directoriul curent (path)
--"CTRL + C" - abandonezi comanda
+- "cd git" - schimbam folderul in folderul "git"
+- "cd .." - schimbam folderul parinte
+- "ls" - vedem ce se afla in interior
+- "pwd" - vezi directoriul curent (path)
+- "CTRL + C" - abandonezi comanda
 
 ## Comenzi utile de git
 
