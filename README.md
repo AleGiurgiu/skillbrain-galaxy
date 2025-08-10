@@ -30,18 +30,16 @@ Pentru a renunta la modificari active, se poate scrie comanda: "git stash"
 
 (important) Sa ne asiguram ca suntem in dosarul parinte (unde s-a copiat repository-ul) si nu in subdosare.
 
-2. git checkout main
-3. git fetch
-4. git pull origin main (actualizam branchul main din github in local) (se mai poate folosi comanda de git rebase)
-
+git checkout main
+git fetch
+git pull origin main (actualizam branchul main din github in local) (se mai poate folosi comanda de git rebase)
 5.git checkout -b sprint7
 
 // Incepem lucru: cream un dosar nou "sprint7" si punem acolo toate fisierele necesare
 
 // Cand terminal lucru:
 
-6. git add .
-
+git add .
 7.git commit -m "Add readme.md"
 
 8.git push origin sprint7
@@ -52,4 +50,4 @@ Pentru a renunta la modificari active, se poate scrie comanda: "git stash"
 
 [se asteapta confirmarea]
 
-11. [doar dupa ce exista confirmarea se apasa Merge la Pull Request]
+[doar dupa ce exista confirmarea se apasa Merge la Pull Request]
