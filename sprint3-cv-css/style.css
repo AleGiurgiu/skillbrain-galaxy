@@ -1,0 +1,27 @@
+body {
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a span {
+  color: black;
+}
+
+h2 {
+  font-size: 25px;
+  color: blue;
+  margin: 25px 0 0;
+}
+
+h1 span,
+.blue {
+  color: blue;
+}
+
+.margin-left {
+  margin: 0 0 6px 22px;
+}
