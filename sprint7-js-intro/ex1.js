@@ -12,7 +12,7 @@ Input: 23
 
 Output: false*/
 
-function DivizibilCu10(numar) {
+function divizibilCu10(numar) {
   if (numar % 10 === 0) {
     return true;
   } else {
