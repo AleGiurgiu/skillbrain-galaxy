@@ -10,7 +10,7 @@
 // Dacă este vocală, atunci o variabilă își mărește valoarea (adaugă +1).
 // În șirul nostru de intrare avem vocalele: i, e, e ⇒ 3.
 
-function numaraVocale(text) {
+function getNumarVocale(text) {
   let vocale = ["a", "e", "i", "o", "u"];
   let numar = 0;
 
@@ -23,5 +23,5 @@ function numaraVocale(text) {
   return numar;
 }
 
-console.log("Număr de vocale:", numaraVocale("string de test"));
-console.log("Numar de vocale:", numaraVocale("A venit toamna.Anotimpul meu preferat!"));
+console.log("Număr de vocale:", getNumarVocale("string de test"));
+console.log("Numar de vocale:", getNumarVocale("A venit toamna.Anotimpul meu preferat!"));

@@ -7,6 +7,10 @@
 // Exemplu 1: Input: [1, -5, 20, -34, 16, 29, 36, -4]
 // Output: [-4, 36, 29, 16, -34, 20, -5, 1]
 
+function inverseazaSir(sir) {
+  return sir.slice().reverse();
+}
+
 let numere = [1, -5, 20, -34, 16, 29, 36, -4];
 let inversate = numere.slice().reverse();
 

@@ -5,12 +5,17 @@
 // Deși ați putea pur și simplu să tipăriți numerele par, fiți creativi și încercați să le generați într-un mod în care să funcționeze indiferent de limită setată
 // (până la 10 sau chiar până la 10.000).
 
-let numerePare = [];
+const getNumerePare = (panaLa) => {
+  let numerePare = [];
 
-for (let i = 0; i <= 10; i++) {
-  if (i % 2 === 0) {
-    numerePare.push(i);
+  for (let i = 0; i <= panaLa; i++) {
+    if (i % 2 === 0) {
+      numerePare.push(i);
+    }
   }
-}
 
-console.log(numerePare);
+  return numerePare;
+};
+
+console.log(getNumerePare(10));
+console.log(getNumerePare(100));
