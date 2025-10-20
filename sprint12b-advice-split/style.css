@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1f2632;
+  color: #cee3e9;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.card {
+  background-color: #323a49;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 450px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.advice-id {
+  color: #52ffa8;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+#advice-text {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+  color: #dbe9f5;
+}
+
+.separator-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.separator-line hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #4e5d73;
+}
+
+.pause {
+  font-size: 1rem;
+  color: #4e5d73;
+}
+
+/* Dice Button */
+#dice-button {
+  background-color: #52ffa8;
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: box-shadow 0.3s ease;
+}
+
+#dice-button:hover {
+  box-shadow: 0 0 20px #52ffa8;
+  transform: translateX(-50%) scale(1.05);
+}
+
+#dice-button img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  #advice-text {
+    font-size: 1.1rem;
+  }
+}
