@@ -23,48 +23,34 @@ class Masina {
     this.kilometraj = kilometraj;
   }
 
-  getProprietati() {
-    return `Masina [marca=${this.marca}, model=${this.model}, culoare=${this.culoare}, kilometraj=${this.kilometraj}]`;
+  afiseazaProprietati() {
+    console.log(`Masina [marca=${this.marca}, model=${this.model}, culoare=${this.culoare}, kilometraj=${this.kilometraj}]`);
   }
 }
 
-function main() {
-  const masina1 = new Masina("Volvo", "XC-60", "Negru", 234_000);
-  const masina2 = new Masina("Mazda", "CX-5", "Verde", 111_000);
-  const masina3 = new Masina("Dacia", "BIGGSTER", "Albastru", 20_000);
-
-  console.log(masina1.getProprietati());
-  console.log(masina2.getProprietati());
-  console.log(masina3.getProprietati());
-}
-
 class MasinaDeCurse extends Masina {
-  constructor(marca, model, culoare, kilometraj, vitezaMaxima, echipa) {
+  constructor(marca, model, culoare, kilometraj) {
     super(marca, model, culoare, kilometraj);
-    this.vitezaMaxima = vitezaMaxima;
-    this.echipa = echipa;
   }
 
   participaLaCampionat(pozitiaInCampionat) {
     if (pozitiaInCampionat > 0) {
-      console.log(`Am castigat locul ${pozitiaInCampionat}`);
+      console.log(`Am castigat locul ${pozitiaInCampionat}!`);
     } else {
-      console.log("Nu am castigat nici un premiu.");
+      console.log("Nu am castigat niciun premiu!");
     }
   }
 }
 
 function mainMasinaDeCurse() {
-  const m1 = new MasinaDeCurse("Ferrari", "SF-24", "Rosu", 50_000, 360, "Scuderia Ferrari");
-  const m2 = new MasinaDeCurse("Porsche", "963", "Verde", 40_000, 330, "Team Porsche");
+  const m1 = new MasinaDeCurse("Ferrari", "SF-24", "Rosu", 50000);
+  const m2 = new MasinaDeCurse("Porsche", "963", "Verde", 40000);
 
-  console.log(m1.getProprietati());
+  m1.afiseazaProprietati();
   m1.participaLaCampionat(2);
 
-  console.log(m2.getProprietati());
+  m2.afiseazaProprietati();
   m2.participaLaCampionat(0);
 }
 
-main();
-console.log("---Masini de curse---");
 mainMasinaDeCurse();
