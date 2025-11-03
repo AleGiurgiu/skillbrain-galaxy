@@ -1,0 +1,395 @@
+/* ========== RESET & BAZĂ ========== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Barlow Condensed", sans-serif;
+  background-color: #0b0d17;
+  color: white;
+  min-height: 100vh;
+}
+
+/* ========== HEADER ========== */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 6rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 0.9rem;
+  letter-spacing: 2.7px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  transition: border-bottom 0.3s ease;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid transparent;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  border-bottom: 3px solid white;
+}
+
+/* ========== HOME SECTION ========== */
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 6rem;
+  min-height: 100vh;
+  background-image: url("assets/home/background-home-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.text-container {
+  max-width: 450px;
+}
+
+.small-text {
+  font-size: 18px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #d0d6f9;
+}
+
+.big-text {
+  font-family: "Bellefair", serif;
+  font-size: 6rem;
+  margin: 0 0 1rem 0;
+  letter-spacing: 2.7px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #d0d6f9;
+}
+
+/* ========== BUTON EXPLORE ========== */
+.explore-button {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  color: black;
+  font-family: "Bellefair", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.explore-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
+}
+
+/* ========== DESTINATION SECTION ========== */
+.destination-section {
+  padding: 4rem 6rem;
+  min-height: 100vh;
+  background-image: url("assets/destination/background-destination-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.destination-section h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 4.7px;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.destination-section h2 span {
+  color: gray;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+
+.destination-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.destination-content img {
+  width: 350px;
+  height: auto;
+}
+
+.destination-info {
+  max-width: 450px;
+}
+
+.tabs {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  background: none;
+  border: none;
+  color: #d0d6f9;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.tab:hover,
+.tab.active {
+  color: white;
+  border-bottom: 3px solid white;
+}
+
+#planet-name {
+  font-family: "Bellefair", serif;
+  font-size: 5rem;
+  margin: 1rem 0;
+}
+
+#planet-description {
+  color: #d0d6f9;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.planet-stats {
+  display: flex;
+  gap: 3rem;
+  border-top: 1px solid #383b4b;
+  padding-top: 2rem;
+}
+
+.planet-stats p {
+  font-size: 0.8rem;
+  letter-spacing: 2.3px;
+  color: #d0d6f9;
+  text-transform: uppercase;
+}
+
+.planet-stats h3 {
+  font-family: "Bellefair", serif;
+  font-size: 1.75rem;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+/* ========== CREW SECTION ========== */
+.crew-section {
+  padding: 4rem 6rem;
+  min-height: 100vh;
+  background-image: url("assets/crew/background-crew-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.crew-section h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 4.7px;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.crew-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.crew-content img {
+  width: 300px;
+  height: auto;
+}
+
+.crew-info h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  color: #d0d6f9;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  margin-bottom: 0.5rem;
+}
+
+.crew-info h4 {
+  font-family: "Bellefair", serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.crew-info p {
+  color: #d0d6f9;
+  line-height: 1.5;
+}
+
+/* Crew tabs (circles) */
+.crew-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.crew-tabs button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #d0d6f9;
+  background: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.crew-tabs button.active,
+.crew-tabs button:hover {
+  background: white;
+}
+
+/* ========== TECHNOLOGY SECTION ========== */
+.technology-section {
+  padding: 4rem 6rem;
+  min-height: 100vh;
+  background-image: url("assets/technology/background-technology-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.technology-section h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 4.7px;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.technology-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.technology-content img {
+  width: 300px;
+  height: auto;
+}
+
+.technology-info h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  color: #d0d6f9;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  margin-bottom: 0.5rem;
+}
+
+.technology-info p {
+  color: #d0d6f9;
+  line-height: 1.5;
+}
+
+/* Technology tabs (numbers) */
+.tech-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tech-tabs button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #d0d6f9;
+  background: none;
+  color: #d0d6f9;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.tech-tabs button.active,
+.tech-tabs button:hover {
+  background: white;
+  color: black;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .home-section,
+  .destination-content,
+  .crew-content,
+  .technology-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .text-container {
+    max-width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .destination-content img,
+  .crew-content img,
+  .technology-content img {
+    width: 250px;
+  }
+
+  .tabs,
+  .crew-tabs,
+  .tech-tabs {
+    justify-content: center;
+  }
+
+  .planet-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
