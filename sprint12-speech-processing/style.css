@@ -1,0 +1,9 @@
+.flex {
+    display: flex;
+}
+#btn-speak, #btn-tell-a-joke {
+    cursor: pointer;
+}
+#speak-text {
+    margin-bottom: 20px;
+}
