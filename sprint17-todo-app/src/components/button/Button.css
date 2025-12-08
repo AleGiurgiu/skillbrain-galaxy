@@ -1,0 +1,37 @@
+.primary-button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s;
+  margin-top: 10px;
+}
+
+.primary-button:hover {
+  background: #4caf50;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.create-button {
+  background: #4caf50;
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s;
+  margin-top: 10px;
+}
+
+.create-button:hover {
+  background: #45a049;
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+}
